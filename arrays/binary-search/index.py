@@ -43,8 +43,8 @@ def binarySearch(list, target):
 
     print("steps", steps)
 
-    # Retorna o resultado encontrado.
-    return list[middle]
+    # Retorna o índice do elemento alvo.
+    return middle
   
   # Se retornar -1, significa que o target não foi encontrado.
   return -1
