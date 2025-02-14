@@ -1,0 +1,16 @@
+{
+  "name": "estrutura-de-dados-e-algoritmos-by-augusto-galego",
+  "version": "1.0.0",
+  "description": "Curso Estruturas de Dados e Algoritmos do [@gutogalego](https://github.com/gutogalego).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ricardo Alves <ricardospalves@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
