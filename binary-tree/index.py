@@ -1,3 +1,6 @@
+from collections import deque
+
+
 class Node:
   def __init__(self, data):
     self.data = data
@@ -60,6 +63,31 @@ class BinaryTree:
     
     return False
 
+  # Breadth-First Search
+  def bfs(self, target):
+    if self.root is None:
+      return False
+    
+    queue = deque()
+
+    queue.append(self.root)
+
+    while queue:
+      node = queue.popleft()
+
+      print(node.data)
+
+      if node.data == target:
+        return True
+      
+      if node.left:
+        queue.append(node.left)
+      
+      if node.right:
+        queue.append(node.right)
+
+    return False
+
   def preorder_traversal(self):
     result = []
 
@@ -113,4 +141,5 @@ tree.insert(7)
 # print('pre traversal', tree.preorder_traversal())
 # print('inorder traversal', tree.inorder_traversal())
 # print('postorder traversal', tree.postorder_traversal())
-print('DFS:', tree.dfs(15))
+# print('DFS:', tree.dfs(15))
+print('BFS:', tree.bfs(15))
